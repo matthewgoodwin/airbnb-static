@@ -2,9 +2,144 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
+<!-- Your banner code -->
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/brooklyn.jpeg');">
+      <div class="banner-content">
+        <h1>WELCOME HOME</h1>
+        <p>You will always find me in the past. I can be created in the present, But the future can never taint me. What am I?</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <form action="#" class="form-inline text-center">
+                    <input type="text" placeholder="checkin" class="form-control text-center">
+                    <input type="text" placeholder="checkout" class="form-control text-center">
+                     <select class="form-inline form-control">
+                      <option value="1">1 guest</option>
+                      <option value="2">2 guests</option>
+                      <option value="3">3 guests</option>
+                    </select><!--end of select -->
+                    <input type="submit" placeholder="search" class="btn btn-primary"><!--button-->
+                  </form> <!--end of form-->
+                </div> <!--end of col-->
+              </div> <!-- end of row-->
+        </div> <!--end of container-->
+      </div><!--end of banner-content-->
+  </div><!--end of banner-->
+
+<!-- Your features code -->
+  <div class="container feat">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <!--<img class="feat-img" src="images/globe.png" alt="">-->
+        <%= image_tag "images/globe.png", class: "feat-img" %>
+        <h1 class="feat-header">Discover the world</h1>
+        <p class="feat-text">The earth is your new home.</p>
+      </div> <!--end of col-xs3-->
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <!--<img class="feat-img" src="images/dollar.png" alt="">-->
+        <%= image_tag "images/dollar.png", class: "feat-img" %>
+        <h1 class="feat-header">Pay online</h1>
+        <p class="feat-text">No cash issues anymore.</p>
+      </div> <!--end of col-xs3-->
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <!--<img class="feat-img" src="images/beer.png" alt="">-->
+        <%= image_tag "images/beer.png", class: "feat-img" %>
+        <h1 class="feat-header">Meet people</h1>
+        <p class="feat-text">Discover new culture and lifestyle.</p>
+      </div> <!--end of col-xs3-->
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <!--<img class="feat-img" src="images/heart.png" alt="">-->
+        <%= image_tag "images/heart.png", class: "feat-img" %>
+        <h1 class="feat-header">Share and love</h1>
+        <p class="feat-text">Join a community you will love.</p>
+      </div> <!--end of col-xs3-->
+    </div><!--end of row-->
+  </div> <!--end of feat container-->
+
+  <!-- Your cards code -->
+      <h3 class="next-visit">YOUR NEXT TRIP</h3>
+        <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/where1.jpeg');">
+              <div class="card-category">Popular1</div>
+              <div class="card-description">
+                <h2>Some stuff</h2>
+                <p>Very cool stuff, useful and smart</p>
+              </div>
+              <!--<img class="card-user avatar-bordered" src="images/anne.jpg">-->
+              <%= image_tag "images/anne.jpg", class: "card-user avatar-bordered" %>
+              <a class="card-link" href="#" ></a>
+          </div> <!--end of card1-->
+        </div>
+        <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/where2.jpeg');">
+              <div class="card-category">Popular2</div>
+              <div class="card-description">
+                <h2>Some stuff</h2>
+                <p>Very cool stuff, useful and smart</p>
+              </div>
+              <!--<img class="card-user avatar-bordered" src="images/seb.jpg">-->
+              <%= image_tag "images/seb.jpg", class: "card-user avatar-bordered" %>
+              <a class="card-link" href="#" ></a>
+          </div> <!--end of card1-->
+        </div>
+        <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/cityonwater2.jpeg');"> <!--needs to be smaller-->
+              <div class="card-category">Popular3</div>
+              <div class="card-description">
+                <h2>Some stuff</h2>
+                <p>Very cool stuff, useful and smart</p>
+              </div>
+              <!--<img class="card-user avatar-bordered" src="images/romain.jpeg">-->
+              <%= image_tag "images/romain.jpeg", class: "card-user avatar-bordered" %>
+              <a class="card-link" href="#" ></a>
+          </div> <!--end of card1-->
+        </div>
+      </div><!--end of row-->
+    </div> <!--end of feat container-->
+  </div> <!--end of card-wrapper-->
+
+
+<!-- Your newsletter code -->
+    <div class="email-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-offset-4 col-sm-4">
+        <h2 class="email-header text-center">Get news from us</h2>
+        <p class="email-text text-center">Leave us your mail and get news from us</p>
+          <form action="#" class="form-inline text-center">
+            <input type="email" value="email@earth.com" class="form-control text-center">
+            <input type="submit" value="Subscribe" class="btn btn-primary">
+          </form> <!--end of form-->
+        </div> <!--end of col-->
+      </div> <!-- end of row-->
+    </div> <!--end of container-->
+    </div><!--end of email wrapper-->
+
+    <!-- Your map code -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

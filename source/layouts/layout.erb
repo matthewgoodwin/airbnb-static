@@ -23,11 +23,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
+<!-- layouts/layout.erb -->
   <body class="<%= page_classes %>">
 
-    <%= partial "navbar" %>
-    <%= yield %>
-
+    <%= partial "navbar" %> <!-- call _navbar.html.erb partial -->
+    <%= yield %> <!-- Page content is injected here -->
+    <%= partial "footer" %> <!-- call _footer.html.erb partial -->
+    <!-- calls _footer.erb -->
   </body>
 </html>
